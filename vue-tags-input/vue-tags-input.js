@@ -341,7 +341,7 @@ export default {
     updateNewTag(ievent) {
       const value = ievent.target.value;
       this.newTag = value;
-      this.$emit('input', value);
+      this.$emit('input', value, ievent);
     },
     initTags() {
       // We always work with a copy of the "real" tags, to easier edit them
